@@ -28,7 +28,7 @@ pipeline {
                 script {
                     // Deploy Docker container with port mapping
                     // This maps port 3000 of the container to port 3000 of the host
-                    sh 'docker run -d -p 3000:5173 --name chatzyr chatzyr:latest'
+                    sh 'docker run -d -p 5173:5173 --name chatzyr chatzyr:latest'
                 }
             }
         }
