@@ -6,10 +6,10 @@ pipeline {
             steps {
                 script {
                     // Remove existing Docker containers
-                    sh 'docker rm -f $(docker ps -aq) || true'
+                    sh 'sudo docker rm -f $(docker ps -aq) || true'
 
                     // Remove existing Docker images
-                    sh 'docker rmi -f $(docker images -q) || true'
+                    sh 'sudo docker rmi -f $(docker images -q) || true'
                 }
             }
         }
@@ -19,7 +19,7 @@ pipeline {
                 script {
                     // Build Docker image
                     // Replace 'my-image-name:my-tag' with your image name and tag
-                    sh 'docker build -t chatzyr:latest .'
+                    sh 'sudo docker build -t chatzyr:latest .'
                 }
             }
         }
@@ -30,7 +30,7 @@ pipeline {
                     // Deploy Docker container
                     // Replace 'my-image-name:my-tag' with your image name and tag
                     // Add any deployment commands here
-                    sh 'docker run -d --name my-container-name chatzyr:latest'
+                    sh 'sudo docker run -d --name my-container-name chatzyr:latest'
                 }
             }
         }
