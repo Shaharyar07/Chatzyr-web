@@ -19,7 +19,7 @@ pipeline {
                 script {
                     // Build Docker image
                     // Replace 'my-image-name:my-tag' with your image name and tag
-                    sh 'sudo docker build -t chatzyr:latest .'
+                    sh 'docker build -t chatzyr:latest .'
                 }
             }
         }
