@@ -18,7 +18,6 @@ pipeline {
             steps {
                 script {
                     // Build Docker image
-                    // Replace 'my-image-name:my-tag' with your image name and tag
                     sh 'docker build -t chatzyr:latest .'
                 }
             }
@@ -27,10 +26,9 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    // Deploy Docker container
-                    // Replace 'my-image-name:my-tag' with your image name and tag
-                    // Add any deployment commands here
-                    sh 'docker run -d --name my-container-name chatzyr:latest'
+                    // Deploy Docker container with port mapping
+                    // This maps port 3000 of the container to port 3000 of the host
+                    sh 'docker run -d -p 3000:3000 --name chatzyr chatzyr:latest'
                 }
             }
         }
