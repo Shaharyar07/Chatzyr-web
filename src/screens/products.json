@@ -1,0 +1,67 @@
+[
+    {"id":23,
+      "image": "https://raw.githubusercontent.com/chatverse90/chatverse-images/main/badge1.jpg",
+      "name": "Heart badge ♥",
+      "price": 1,
+      "type": 2,
+      "description": "Heart badge ♥."
+    },
+    {"id":24,
+      "image": "https://raw.githubusercontent.com/chatverse90/chatverse-images/main/badge5.jpg",
+      "name": "Australian Badge",
+      "price": 3,
+      "type": 2,
+      "description": "GET YOUR COUNTRY CUSTOM BADGE IN 3$"
+    },
+    {"id":25,
+      "image": "https://raw.githubusercontent.com/chatverse90/chatverse-images/main/badge2.jpg",
+      "name": "🇵🇰  PAKISTAN BADGE ❤",
+      "price": 2,
+      "type": 2,
+      "description": "GET YOUR COUNTRY CUSTOM BADGE"
+    },
+    {"id":26,
+      "image": "https://raw.githubusercontent.com/chatverse90/chatverse-images/main/badge3.jpg",
+      "name": "ELEGANT HEART BADGE ❤",
+      "price": 1,
+      "type": 2,
+      "description": "Heart badge ♥."
+    },
+    {"id":27,
+    "image": "https://raw.githubusercontent.com/chatverse90/chatverse-images/main/badge4.jpg",
+    "name": "GHOST COP BADGE",
+    "price": 4,
+    "type": 2,
+    "description": "GHOST COP - LIMITED EDITION BADGE FOR YOUR CHATZYR BADGE COLLECTION"
+  },
+  {"id":28,
+    "image": "https://raw.githubusercontent.com/chatverse90/chatverse-images/main/badge6.jpg",
+    "name": "MAD Skull BADGE",
+    "price": 1,
+    "type": 2,
+    "description": "Limited edition MAD Skull badge Get this badge into your custom chatzyr badge collection"
+  },
+  {"id":29,
+    "image": "https://raw.githubusercontent.com/chatverse90/chatverse-images/main/badge7.jpg",
+    "name": "PALESTINE 🇵🇸",
+    "price": 1,
+    "type": 2,
+    "description": "GRAB YOUR BADGE TO SHOW YOUR SUPPORT FOR PALESTINIANS. GIFT THIS BADGE TO YOUR CHATZYR FRIENDS AND LETS JOIN HANDS AND PROMOTE PEACE ."
+  },
+  {"id":30,
+    "image": "https://raw.githubusercontent.com/chatverse90/chatverse-images/main/badge8.jpg",
+    "name": "FUNKY DEVIL",
+    "price": 1,
+    "type": 2,
+    "description": "LIMITED EDITION CHATZYR BADGE."
+  },
+  {"id":31,
+  "image": "https://raw.githubusercontent.com/chatverse90/chatverse-images/main/badge9.jpg",
+  "name": "KING",
+  "price": 2,
+  "type": 2,
+  "description": " GET IT CUSTOMIZED AND GET YOUR NAME ON THE BADGE AND FLEX INFRONT OF YOUR CHATZYR FRIENDS."
+}
+    
+  ]
+  

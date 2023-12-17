@@ -1,0 +1,29 @@
+@media only screen and (max-width: 480px) {
+    .image-slider {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+    }
+
+    .tablet-frame {
+      border: 10px solid #333;
+      border-radius: 20px;
+      width: 200px !important; /* Set the width to 100% to fit within the frame */
+      height: 300px !important; /* Let the height be determined by the content */
+      /* border-radius: 0; Remove border-radius if desired */
+      box-shadow: none; 
+    }
+
+      
+  .tablet-frame img {
+    width: 100%; /* Set the width to 100% to fit within the frame */
+    height: 100%; /* Set the height to 100% to fit within the frame */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  }

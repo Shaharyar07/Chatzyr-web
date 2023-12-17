@@ -1,0 +1,194 @@
+/* Order.css */
+.order-item-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.product {
+    display: flex;
+    margin: 20px 0;
+}
+
+.image {
+    width: 50%;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 20px;
+}
+
+.details h2 {
+    margin: 0;
+}
+.details p {
+    margin: 0;
+    text-align: left;
+    
+}
+
+.order-form {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    margin-top: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-form input[type='text'],
+.order-form input[type='email'] {
+    width: calc(60% - 20px);
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: none;
+    box-sizing: border-box;
+    
+}
+
+.order-form button {
+    width: calc(40% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color:  #F51118;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+}
+
+.order-form button:hover {
+    background-color:#F94b50; 
+}
+
+.order-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 40%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.order-modal h4{
+    color: #000;
+    text-align: center;
+}
+.order-modal h2{
+    color: #000;
+    text-align: center;
+}
+/* Order.css */
+/* Previous styles here */
+
+/* Media query for mobile view */
+@media screen and (max-width: 600px) {
+    .order-item-page {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .product {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .image {
+        width: 80%;
+    }
+
+    .image img {
+        border-radius: 5px;
+    }
+
+    .details {
+        width: 80%;
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    .details h2 {
+        font-size: 1.5em;
+        margin: 10px 0 5px;
+    }
+
+    .details p {
+        font-size: 1em;
+        text-align:center;
+        width: 100%;
+        
+    }
+   
+
+    .order-form {
+        padding: 15px;
+        margin-top: 20px;
+        justify-content: center;
+        width: calc(90% - 20px);
+    }
+
+    .order-form input[type='text'],
+    .order-form input[type='email'] {
+        width: calc(100% - 20px);
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .order-form button {
+        width: calc(100% - 20px);
+        margin-top: 20px;
+    }
+
+    .order-modal {
+        width: 80%;
+        padding: 15px;
+        border-color: slategray;
+        border-width: 2px;
+    }
+    .order-modal strong {
+        font-size: 1.2em;
+    }
+    .order-modal p {
+        font-size: 1em;
+    }
+}

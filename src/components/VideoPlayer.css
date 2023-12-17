@@ -1,0 +1,38 @@
+/* VideoPlayer.css */
+.video-player-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; Make the video full viewport height */
+    background-color: #333; /* Set a background color */
+    overflow: hidden; /* Hide video overflow */
+  }
+  
+  video {
+    width: 100%;
+    max-width: 100%; /* Make the video responsive */
+    height: auto;
+    /* cursor: pointer; Show pointer cursor on video click */
+  }
+
+  @media (max-width: 768px) {
+    .video-player-container  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 0vh !important;  */
+        background-color: #333; /* Set a background color */
+        overflow: hidden; /* Hide video overflow */
+        position: relative; 
+      }
+      
+      video {
+        width: 100%;
+        max-width: 100%; /* Make the video responsive */
+        height: auto;
+        cursor: pointer; /* Show pointer cursor on video click */
+        pointer-events: none; 
+        z-index: 0;
+        /* cursor: pointer; Show pointer cursor on video click */
+      } 
+  }

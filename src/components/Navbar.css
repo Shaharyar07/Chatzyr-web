@@ -1,0 +1,143 @@
+/* Navbar.css */
+
+.navbar {
+  background: linear-gradient(to right, #F94b50, #F51118);
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  margin-right: 20px;
+}
+
+/* Add a media query for screens smaller than a certain width */
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* Hide the menu items */
+    flex-direction: column; /* Stack the menu items vertically */
+    position: absolute;
+    top: 60px; /* Adjust the distance from the top */
+    left: 0;
+    width: 100%;
+    align-items: center;
+    background: linear-gradient(to right, #F94b50, #F51118);
+    z-index: 1;
+  }
+
+  .menu.active {
+    display: flex; /* Show the menu items when the menu is active */
+  }
+
+  .menu-item {
+    margin: 10px 0; /* Add spacing between menu items */
+  }
+
+  .menu-link {
+    color: white;
+  }
+
+  .menu-link:hover {
+    color: #d40505;
+  }
+  /* Add these styles to your CSS */
+/* Hamburger menu styles */
+.menu-toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+    cursor: pointer;
+    padding-right: 10px;
+    /* margin-left: 200px; */
+    margin-bottom: 20px;
+   
+
+}
+
+.hamburger {
+  width: 30px;
+  height: 0px;
+  background: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.bar{
+  width: 30px;
+  height: 3px;
+  /* padding: 1px; */
+  background: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.hamburger.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-6px, 7px);
+}
+
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-6px, -7px);
+}
+}
+
+/* Keep the original styling for larger screens */
+.menu-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  padding: 15px 15px;
+}
+
+.menu-link2 {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.menu-link2:hover {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.menu-link:hover {
+  color: #fff;
+  border-bottom-color: #FFF;
+  border-bottom: #FFF;
+  border-bottom-width: 2px;
+  border-bottom-style:groove;
+  padding: 15px 15px;
+  /* float:initial; */
+  /* border-radius: 5px; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo1 {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+
